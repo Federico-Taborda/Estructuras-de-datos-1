@@ -1,2 +1,5 @@
 # Estructuras-de-datos-1
-Repositorio de teoria y ejercicios de la materia
+
+## Para formateo de codigo
+
+indent -kr -brf -i2 -nut test.c
