@@ -3,11 +3,15 @@
 # Ejecutar el script
 # bash compilar.sh numero_modulo ejercicio_a_compilar 
 # Ej:
-# bash compilar.sh E1 Ejercicio_1.c 
-# bash compilar.sh A1 Ejercicio_1.c 
+# bash compilar.sh E1 1
+# bash compilar.sh E1 1_a
+# bash compilar.sh A1 1
+# bash compilar.sh A1 2
+
+gcc ./'Modulo-'$1/'Ejercicio_'$2'.c'
 
 compilar() {
-    gcc -gstabs -Wall -Wextra -o ejecutable ./'Modulo-'$1/$2 -lm
+    gcc -gstabs -Wall -Wextra -o ejecutable ./'Modulo-'$1/'Ejercicio_'$2'.c' -lm
     ./ejecutable
 }
 
