@@ -8,7 +8,7 @@
 # bash compilar.sh A1 1
 # bash compilar.sh A1 2
 
-gcc ./'Modulo-'$1/'Ejercicio_'$2'.c'
+#gcc ./'Modulo-'$1/'Ejercicio_'$2'.c'
 
 compilar() {
     gcc -gstabs -Wall -Wextra -o ejecutable ./'Modulo-'$1/'Ejercicio_'$2'.c' -lm
