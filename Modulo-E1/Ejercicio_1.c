@@ -13,8 +13,7 @@ float mediana(float *arreglo, int longitud) {
     }else{
         mediana = arreglo[longitud / 2];
     }
-
-
+    
     return mediana;
 }
 
